@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import Sidebar from '@/components/Sidebar.vue';
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <Sidebar />
+    <div class="bg-red-700 h-[100rem]">
+      <label>k</label>
+    </div>
   </main>
 </template>
