@@ -1,17 +1,18 @@
 <template>
-  <nav class="fixed w-1/5 h-[100vh] bg-gradient-to-r from-black via-black to-black/0 text-white m-0 flex flex-col items-center justify-center">
+  <nav class="fixed z-50 w-1/5 h-[100vh] bg-gradient-to-r from-black via-black to-black/0 text-white m-0 flex flex-col items-center justify-center">
     <ul class="w-full h-2/3 flex flex-col justify-between items-start px-[5rem]">
       <li
         v-for="(item, index) in menuItems"
         :key="index"
         @mouseenter="hovered = index"
         @mouseleave="hovered = null"
-        class="flex items-center gap-4 transition-all duration-200 ease-in-out group"
+        @click="goToSection(item.hash)"
+        class="flex items-center gap-4 transition-all duration-200 ease-in-out group cursor-pointer"
       >
         <img
           :src="hovered === index ? item.iconHover : item.icon"
           alt="icon"
-          class="w-6 h-6 transition-transform duration-200 ease-in-out group-hover:scale-110"
+          class="w-6 h-6 transition-transform duration-200 ease-in-out group-hover:scale-110 cursor-pointer"
         />
         <span
           class="font-bold text-xl text-white group-hover:text-[#C48701] transition-all duration-300 ease-in-out"
@@ -26,7 +27,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
 const hovered = ref(null)
 
 const menuItems = [
@@ -49,6 +52,7 @@ const menuItems = [
     text: 'Atractivos',
     icon: new URL('@/assets/img/icons/piramide.svg', import.meta.url).href,
     iconHover: new URL('@/assets/img/icons/piramide_gold.svg', import.meta.url).href,
+    hash: '#atractives'
   },
   {
     text: 'Festividades',
@@ -76,6 +80,10 @@ const menuItems = [
     iconHover: new URL('@/assets/img/icons/menu_gold.png', import.meta.url).href,
   },
 ]
+
+function goToSection(hash: string) {
+  router.push({ path: '/', hash })
+}
 </script>
 
 <style scoped>
