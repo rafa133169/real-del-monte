@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CarouselCards from '@/components/CarouselCards.vue'
+import CarouselCards from '@/components//Carrousel.vue'
 
 const realDelMonteCards = [
   {

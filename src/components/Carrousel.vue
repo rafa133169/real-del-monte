@@ -40,7 +40,7 @@ onMounted(() => {
     if (!isDown) return
     e.preventDefault()
     const x = e.pageX - container.offsetLeft
-    const walk = (x - startX) * 1.5 // velocidad
+    const walk = (x - startX) * 1.5
     container.scrollLeft = scrollLeft - walk
   })
 })
@@ -48,10 +48,9 @@ onMounted(() => {
 
 <template>
   <div class="relative overflow-hidden px-4">
-    <!-- Contenedor con scroll horizontal controlado -->
     <div
       ref="containerRef"
-      class="overflow-x-auto scroll-smooth -mx-4 pr-4 cursor-grab select-none"
+      class="scrollbar-hide overflow-x-auto scroll-smooth -mx-4 pr-4 cursor-grab select-none"
     >
       <div class="flex space-x-4 w-max h-full">
         <div
