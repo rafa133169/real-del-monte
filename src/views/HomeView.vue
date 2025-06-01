@@ -7,6 +7,7 @@ import LiveItsMagic from '@/components/LiveItsMagic.vue'
 import Weather from '@/components/Weather.vue'
 import location from '@/assets/img/hidalgo-location.png'
 import Imprescindibles from '@/components/Imprescindibles.vue'
+import hotelsCard from '@/data/hotelsCards'
 
 </script>
 
@@ -61,6 +62,18 @@ import Imprescindibles from '@/components/Imprescindibles.vue'
     <section id="imprescindibles" class="mt-10 px- pl-10 max-w-7xl mx-auto text-white align-center">
       <h2 class="text-4xl font-bold mb-6 text-center">Imprescindibles</h2>
       <Imprescindibles />
+    </section>
+
+    <!-- Festividades -->
+    <!-- <section id="festivities" class="mt-10 mb-10 px- max-w-7xl mx-auto text-white">
+      <h2 class="text-4xl font-bold mb-6 text-center">Festividades</h2>
+      <CarouselCards :items="atractiveCards" />
+    </section> -->
+
+    <!-- Hoteles -->
+    <section id="hotels" class="mt-10 mb-10 px- max-w-7xl mx-auto text-white">
+      <h2 class="text-4xl font-bold mb-6 text-center">Hoteles</h2>
+      <CarouselCards :items="hotelsCard" />
     </section>
 
   </main>

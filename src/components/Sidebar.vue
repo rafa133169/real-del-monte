@@ -59,11 +59,13 @@ const menuItems = [
     text: 'Festividades',
     icon: new URL('@/assets/img/icons/festividades.svg', import.meta.url).href,
     iconHover: new URL('@/assets/img/icons/festividades_gold.svg', import.meta.url).href,
+    hash: '#festivities'
   },
   {
     text: 'Hoteles',
     icon: new URL('@/assets/img/icons/hoteles.svg', import.meta.url).href,
     iconHover: new URL('@/assets/img/icons/hoteles_gold.svg', import.meta.url).href,
+    hash: '#hotels'
   },
   {
     text: 'Restaurantes',
