@@ -47,6 +47,7 @@ const menuItems = [
     text: 'Vive su magia',
     icon: new URL('@/assets/img/icons/carteles.svg', import.meta.url).href,
     iconHover: new URL('@/assets/img/icons/carteles_gold.svg', import.meta.url).href,
+    hash: '#liveitsmagic'
   },
   {
     text: 'Atractivos',

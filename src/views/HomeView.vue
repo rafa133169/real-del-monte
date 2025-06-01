@@ -3,6 +3,7 @@ import puebloMagicos from '@/assets/img/icons/pueblo_magicos.svg'
 import favicon from '@/assets/img/icons/favicon.svg'
 import CarouselCards from '@/components/Carrousel.vue'
 import atractiveCards from '@/data/atractivesCards'
+import LiveItsMagic from '@/components/LiveItsMagic.vue'
 
 </script>
 
@@ -24,10 +25,17 @@ import atractiveCards from '@/data/atractivesCards'
     </section>
 
     <!-- Atractivos -->
-    <section id="atractives" class="mt-10 px-4 max-w-5xl mx-auto text-white">
-      <h2 class="text-3xl font-bold mb-6 text-center">Atractivos</h2>
+    <section id="atractives" class="mt-10 mb-10 px- max-w-7xl mx-auto text-white">
+      <h2 class="text-4xl font-bold mb-6 text-center">Atractivos</h2>
       <CarouselCards :items="atractiveCards" />
     </section>
+
+    <!-- Vive su Magia -->
+    <section id="liveitsmagic" class="mt-10 px- pl-10 max-w-7xl mx-auto text-white align-center">
+      <h2 class="text-4xl font-bold mb-6 text-center">Vive su magia</h2>
+      <LiveItsMagic />
+    </section>
+
   </main>
 </template>
 

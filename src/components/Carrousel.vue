@@ -47,7 +47,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="relative overflow-hidden px-4">
+  <div class="relative overflow-hidden px-4 p-6">
     <div
       ref="containerRef"
       class="scrollbar-hide overflow-x-auto scroll-smooth -mx-4 pr-4 cursor-grab select-none"
