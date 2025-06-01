@@ -10,7 +10,7 @@
         de Hidalgo.
       </p>
 
-      <div class="flex flex-row justify-between mt-6 gap-15">
+      <div class="flex flex-row justify-between mt-6">
         <div class="flex justify-start mb-4">
           <div class="flex flex-col items-start">
             <h4 class="text-2xl font-bold">El Motivo</h4>

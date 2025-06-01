@@ -4,6 +4,8 @@ import favicon from '@/assets/img/icons/favicon.svg'
 import CarouselCards from '@/components/Carrousel.vue'
 import atractiveCards from '@/data/atractivesCards'
 import LiveItsMagic from '@/components/LiveItsMagic.vue'
+import Weather from '@/components/Weather.vue'
+import location from '@/assets/img/hidalgo-location.png'
 
 </script>
 
@@ -14,13 +16,29 @@ import LiveItsMagic from '@/components/LiveItsMagic.vue'
       class="w-full h-[100vh] relative bg-cover bg-center"
       style="background-image: url('src/assets/img/icons/HGO_REAL_DEL_MONTE.jpg')"
     >
-      <div class="absolute inset-0 bg-black/70 z-10"></div>
-      <div class="relative z-20 flex flex-col items-center justify-start h-full pt-10">
-        <div class="flex items-center mb-6 space-x-4">
-          <img :src="favicon" alt="Icono" class="w-16 h-16 animate-spin-slow" />
-          <img :src="puebloMagicos" alt="Pueblos Mágicos" class="w-64 h-auto" />
+      <div class="absolute inset-0 bg-black/70 z-10">
+        <div class="relative z-20 flex flex-col items-center justify-start h-full pt-10">
+          <div class="flex items-center mb-6 space-x-4">
+            <img :src="favicon" alt="Icono" class="w-16 h-16 animate-spin-slow" />
+            <img :src="puebloMagicos" alt="Pueblos Mágicos" class="w-64 h-auto" />
+          </div>
+          <!-- Inicio -->
+          <div class="flex flex-row items-center justify-center pl-12 gap-8 my-auto">
+            <div class="flex flex-col items-start space-y-4">
+              <div class="flex flex-col items-start gap-5 max-w-md">
+                <h2 class="text-2xl font-bold text-white">Hidalgo</h2>
+                <h1 class="text-4xl font-bold text-white">Real del Monte</h1>
+                <p class="text-white">
+                  Siéntate frente a una de las bellas plazas del Pueblo <br>
+                  Mágico, mientras saboreas un delicioso paste y luego <br>
+                  descubre sus rincones que conservan un dejo británico.
+                </p>
+              </div>
+              <Weather />
+            </div>
+            <img :src="location" alt="Ubicación" class="w-82 h-56 mt-4" />
+          </div>
         </div>
-        <h1 class="text-4xl font-bold text-white text-center px-4">Bienvenido a la Página Principal</h1>
       </div>
     </section>
 
