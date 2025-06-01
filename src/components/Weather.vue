@@ -9,9 +9,12 @@ const weather = ref<{
   icon: string
 } | null>(null)
 
+const loader = ref(false)
+
 const API_KEY = import.meta.env.VITE_OPEN_WEATHER_API
 
 onMounted(async () => {
+  loader.value = true
   try {
     const { data } = await axios.get(
       `https://api.openweathermap.org/data/2.5/weather?q=Real del Monte,mx&units=metric&appid=${API_KEY}&lang=es`
@@ -25,12 +28,21 @@ onMounted(async () => {
     }
   } catch (error) {
     console.error('Error al obtener el clima:', error)
+  } finally {
+    loader.value = false
   }
 })
 </script>
 
 <template>
-  <div v-if="weather" class="p-4 rounded-xl text-white w-fit">
+  <div v-if="loader" class="flex items-center justify-center align-center h-16">
+    <div class="flex space-x-2">
+      <div class="w-3 h-3 bg-white rounded-full animate-bounce"></div>
+      <div class="w-3 h-3 bg-white rounded-full animate-bounce [animation-delay:-0.2s]"></div>
+      <div class="w-3 h-3 bg-white rounded-full animate-bounce [animation-delay:-0.4s]"></div>
+    </div>
+  </div>
+  <div v-if="weather" class="rounded-xl text-white w-fit">
     <div class="flex flex-row items-center align-center space-x-4">
       <img :src="weather.icon" :alt="weather.description" class="w-12 h-12" />
       <div class="text-center flex align-center justify-center space-x-4 gap-5">
