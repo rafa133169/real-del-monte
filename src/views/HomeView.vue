@@ -65,15 +65,9 @@ import hotelsCard from '@/data/hotelsCards'
     </section>
 
     <!-- Festividades -->
-    <!-- <section id="festivities" class="mt-10 mb-10 px- max-w-7xl mx-auto text-white">
+    <section id="festivities" class="mt-10 mb-10 px- max-w-7xl mx-auto text-white">
       <h2 class="text-4xl font-bold mb-6 text-center">Festividades</h2>
       <CarouselCards :items="atractiveCards" />
-    </section> -->
-
-    <!-- Festividades -->
-    <section id="hotels" class="mt-10 mb-10 px- max-w-7xl mx-auto text-white">
-      <h2 class="text-4xl font-bold mb-6 text-center">Festividades</h2>
-      <CarouselCards :items="hotelsCard" />
     </section>
 
        <!-- Hoteles -->
