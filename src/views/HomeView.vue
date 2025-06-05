@@ -70,9 +70,27 @@ import hotelsCard from '@/data/hotelsCards'
       <CarouselCards :items="atractiveCards" />
     </section> -->
 
-    <!-- Hoteles -->
+    <!-- Festividades -->
+    <section id="hotels" class="mt-10 mb-10 px- max-w-7xl mx-auto text-white">
+      <h2 class="text-4xl font-bold mb-6 text-center">Festividades</h2>
+      <CarouselCards :items="hotelsCard" />
+    </section>
+
+       <!-- Hoteles -->
     <section id="hotels" class="mt-10 mb-10 px- max-w-7xl mx-auto text-white">
       <h2 class="text-4xl font-bold mb-6 text-center">Hoteles</h2>
+      <CarouselCards :items="hotelsCard" />
+    </section>
+
+       <!-- Restaurantes -->
+    <section id="hotels" class="mt-10 mb-10 px- max-w-7xl mx-auto text-white">
+      <h2 class="text-4xl font-bold mb-6 text-center">Restaurantes</h2>
+      <CarouselCards :items="hotelsCard" />
+    </section>
+
+       <!-- Tours -->
+    <section id="hotels" class="mt-10 mb-10 px- max-w-7xl mx-auto text-white">
+      <h2 class="text-4xl font-bold mb-6 text-center">Tours</h2>
       <CarouselCards :items="hotelsCard" />
     </section>
 
