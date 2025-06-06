@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import puebloMagicos from '@/assets/img/icons/pueblo_magicos.svg'
 import favicon from '@/assets/img/icons/favicon.svg'
-import CarouselCards from '@/components/Carrousel.vue'
+import CarouselCards from '@/components/CarrouselComponent.vue'
 import atractiveCards from '@/data/atractivesCards'
 import LiveItsMagic from '@/components/LiveItsMagic.vue'
 import Weather from '@/components/Weather.vue'
@@ -66,30 +66,35 @@ import festivitiesCards from '@/data/festivitiesCardas'
       <h2 class="text-4xl font-bold mb-6 text-center">Imprescindibles</h2>
       <Imprescindibles />
     </section>
+    <br>
 
     <!-- Festividades -->
     <section id="festivities" class="mt-10 mb-10 px- max-w-7xl mx-auto text-white">
       <h2 class="text-4xl font-bold mb-6 text-center">Festividades</h2>
       <CarouselCards :items="festivitiesCards" />
     </section>
+    <br>
 
        <!-- Hoteles -->
     <section id="hotels" class="mt-10 mb-10 px- max-w-7xl mx-auto text-white">
       <h2 class="text-4xl font-bold mb-6 text-center">Hoteles</h2>
       <CarouselCards :items="hotelsCard" />
     </section>
+    <br>
 
        <!-- Restaurantes -->
     <section id="hotels" class="mt-10 mb-10 px- max-w-7xl mx-auto text-white">
       <h2 class="text-4xl font-bold mb-6 text-center">Restaurantes</h2>
       <CarouselCards :items="restaurantsCards" />
     </section>
+    <br>
 
        <!-- Tours -->
     <section id="hotels" class="mt-10 mb-10 px- max-w-7xl mx-auto text-white">
       <h2 class="text-4xl font-bold mb-6 text-center">Tours</h2>
       <CarouselCards :items="hotelsCard" />
     </section>
+    <br>
 
   </main>
 </template>

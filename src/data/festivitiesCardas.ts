@@ -12,7 +12,7 @@ const festivitiesCards = [
   {
     title: 'Festival del Paste',
     place: 'REAL DEL MONTE',
-    image: new URL('@/assets/img/festivities/FestivalDelPaste.jpeg', import.meta.url).href,
+    image: new URL('@/assets/img/festivities/FestivalDelPaste.jpg', import.meta.url).href,
   },
   {
     title: 'Fiesta patronal (Enero)',
@@ -39,7 +39,7 @@ const festivitiesCards = [
     place: 'REAL DEL MONTE',
     image: new URL('@/assets/img/festivities/VillaIluminada.jpg', import.meta.url).href,
   }
-  
+
 ]
 
 export default festivitiesCards

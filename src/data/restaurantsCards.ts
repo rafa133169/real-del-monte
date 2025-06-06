@@ -7,12 +7,12 @@ const restaurantsCards = [
   {
     title: 'Pastes El Portal',
     place: 'REAL DEL MONTE',
-    image: new URL('@/assets/img/restaurants/PastelElPortal.jpg', import.meta.url).href,
+    image: new URL('@/assets/img/restaurants/PastesElPortal.jpg', import.meta.url).href,
   },
   {
     title: 'Restaurante Real del Monte',
     place: 'REAL DEL MONTE',
-    image: new URL('@/assets/img/restaurants/RestauranteRealDelMonte.jpeg', import.meta.url).href,
+    image: new URL('@/assets/img/restaurants/RestauranteRealDelMonte.jpg', import.meta.url).href,
   },
   {
     title: 'La Casona de la Carne',
@@ -29,7 +29,7 @@ const restaurantsCards = [
     place: 'REAL DEL MONTE',
     image: new URL('@/assets/img/restaurants/MineralDelMonte.jpg', import.meta.url).href,
   }
-  
+
 ]
 
 export default restaurantsCards
