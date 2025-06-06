@@ -10,6 +10,7 @@ import Imprescindibles from '@/components/Imprescindibles.vue'
 import hotelsCard from '@/data/hotelsCards'
 import restaurantsCards from '@/data/restaurantsCards'
 import festivitiesCards from '@/data/festivitiesCardas'
+import toursCards from '@/data/toursCards'
 
 
 </script>
@@ -92,7 +93,7 @@ import festivitiesCards from '@/data/festivitiesCardas'
        <!-- Tours -->
     <section id="hotels" class="mt-10 mb-10 px- max-w-7xl mx-auto text-white">
       <h2 class="text-4xl font-bold mb-6 text-center">Tours</h2>
-      <CarouselCards :items="hotelsCard" />
+      <CarouselCards :items="toursCards" />
     </section>
     <br>
 
