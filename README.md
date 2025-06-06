@@ -34,7 +34,7 @@ real-del-monte/
 ├── tailwind.config.js  # Configuración de Tailwind
 ├── vite.config.js      # Configuración de Vite
 └── package.json        # Dependencias y scripts
-
+```
 
 ---
 
@@ -52,13 +52,14 @@ real-del-monte/
 ```bash
 git clone https://github.com/tu-usuario/real-del-monte.git
 cd real-del-monte
-
+```
 ### 📦 Paso 2: Instalar dependencias
 
 ```bash
 npm install
-
+```
 ### 💻 Paso 3: Iniciar el servidor de desarrollo
 
 ```bash
 npm run dev
+```
