@@ -9,6 +9,7 @@ import location from '@/assets/img/hidalgo-location.png'
 import Imprescindibles from '@/components/Imprescindibles.vue'
 import hotelsCard from '@/data/hotelsCards'
 import restaurantsCards from '@/data/restaurantsCards'
+import festivitiesCards from '@/data/festivitiesCardas'
 
 
 </script>
@@ -69,7 +70,7 @@ import restaurantsCards from '@/data/restaurantsCards'
     <!-- Festividades -->
     <section id="festivities" class="mt-10 mb-10 px- max-w-7xl mx-auto text-white">
       <h2 class="text-4xl font-bold mb-6 text-center">Festividades</h2>
-      <CarouselCards :items="atractiveCards" />
+      <CarouselCards :items="festivitiesCards" />
     </section>
 
        <!-- Hoteles -->
