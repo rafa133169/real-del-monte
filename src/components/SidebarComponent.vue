@@ -6,7 +6,7 @@
         :key="index"
         @mouseenter="hovered = index"
         @mouseleave="hovered = null"
-        @click="goToSection(item.hash)"
+        @click="item.hash && goToSection(item.hash)"
         class="flex items-center gap-4 transition-all duration-200 ease-in-out group cursor-pointer"
       >
         <img
@@ -30,7 +30,7 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
-const hovered = ref(null)
+const hovered = ref<number | null>(null)
 
 const menuItems = [
   {
@@ -84,8 +84,10 @@ const menuItems = [
   },
 ]
 
-function goToSection(hash: string) {
-  router.push({ path: '/', hash })
+function goToSection(hash?: string) {
+  if (hash) {
+    router.push({ path: '/', hash })
+  }
 }
 </script>
 
