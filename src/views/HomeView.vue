@@ -11,6 +11,8 @@ import hotelsCard from '@/data/hotelsCards'
 import restaurantsCards from '@/data/restaurantsCards'
 import festivitiesCards from '@/data/festivitiesCardas'
 import toursCards from '@/data/toursCards'
+import bgImg from '@/assets/img/icons/HGO_REAL_DEL_MONTE.jpg'
+
 
 
 </script>
@@ -20,7 +22,7 @@ import toursCards from '@/data/toursCards'
     <section
       id="home"
       class="w-full h-[100vh] relative bg-cover bg-center"
-      style="background-image: url('src/assets/img/icons/HGO_REAL_DEL_MONTE.jpg')"
+    :style="{ backgroundImage: `url(${bgImg})` }"
     >
       <div class="absolute inset-0 bg-black/70 z-10">
         <div class="relative z-20 flex flex-col items-center h-full pt-10">
